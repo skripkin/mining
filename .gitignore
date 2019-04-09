@@ -1,0 +1,4 @@
+.gulp-scss-cache/
+node_modules/
+package-lock.json
+app/assets/.DS_Store

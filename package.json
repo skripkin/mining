@@ -1,0 +1,61 @@
+{
+  "name": "mining",
+  "version": "0.0.1",
+  "description": "<h1>mining</h1>",
+  "main": "src/index.js",
+  "scripts": {
+    "script:build": "webpack --env production --mode development",
+    "iconfont:build": "node ./iconfont-normalize.js --rename && gulp iconfont:collect && gulp iconfont:create && node ./iconfont-normalize.js --rewrite && gulp style:build",
+    "build": "npm run script:build && gulp build && npm run iconfont:build",
+    "start": "webpack --env development --mode development && gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/Skripkin/mining.git"
+  },
+  "author": "spavelhjk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Skripkin/mining/issues"
+  },
+  "homepage": "https://gitlab.com/Skripkin/mining#README",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-async-tasks": "^1.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-changed": "^1.3.2",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-flatten": "^0.3.1",
+    "gulp-iconfont": "^10.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-include": "^2.3.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-memory-cache": "^0.3.0",
+    "gulp-newer": "^1.3.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-svgicons2svgfont": "^4.0.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.7",
+    "gulp-wait": "0.0.2",
+    "gulp-watch": "^5.0.0",
+    "jshint": "^2.9.7",
+    "pug": "^2.0.3",
+    "uglifyjs-webpack-plugin": "^1.2.6",
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-merge": "^4.1.3"
+  },
+  "dependencies": {
+    "imask": "^4.1.5",
+    "masonry-layout": "^4.2.2",
+    "tiny-slider": "^2.9.1"
+  }
+}
