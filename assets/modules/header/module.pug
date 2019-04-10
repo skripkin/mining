@@ -1,0 +1,46 @@
+-
+    var headerInfo = {
+        titles: [
+            {link:'#', text:'О проекте'},
+            {link:'#', text:'Финансы'},
+            {link:'#', text:'Контакты'},
+        ],
+
+        items: [
+            {link:'#', text:'Новости'},
+            {link:'#', text:'Проекты'},
+            {link:'#', text:'Инвесторам'},
+            {link:'#', text:'Сервисные компании'},
+            {link:'#', text:'Научные статьи'},
+            {link:'#', text:'Истории успеха'},
+        ]
+    };
+
+
+.header
+    .header__icon
+        img.header__logo(src="../app/assets/images/Logo-mining.png", alt="Error" width="100%")
+    .header__menubar
+        .header__about-us
+            ul.header__info
+                each title in headerInfo.titles
+                    li.header__title
+                        a.header__title-link(href= title.link)= title.text
+            .header__dropdown-box
+                -
+                    var dropdown = {
+                        type: 'lang',
+                        title: 'Ru',
+                        name: 'lang',
+                        options: [
+                            {type: 'Ru', title: 'Ru'},
+                            {type: 'En', title: 'En'}
+                        ]
+                    };
+                include ../dropdown/module
+            button.header__login Войти
+        .header__menu
+            ul.header__sailing
+                each item in headerInfo.items
+                    li.header__item
+                        a.header__item-link(href= item.link)= item.text

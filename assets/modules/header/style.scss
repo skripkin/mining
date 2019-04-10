@@ -1,0 +1,67 @@
+.header {
+    position: fixed;
+    display: flex;
+    background-color: $dark-orange;
+    justify-content: space-between;
+    padding: 17px 40px;
+    z-index: 15;
+
+    &__icon {
+        width: 17.3%;
+    }
+    
+    &__menubar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__about-us {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__dropdown-box {
+        margin-left: 30px;
+    }
+
+    
+    &__login {
+        align-self: center;
+        margin-left: 15px;
+        padding: 5px 33px;
+        background-color: $red-gray;
+        color: $dark-orange;
+        border-radius: 7px;
+        font-size: medium;
+    }
+
+
+    &__info {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    &__sailing {
+        @extend .header__info;
+    }
+
+    &__title,
+    &__item {
+        margin-left: 25px;
+    }
+
+    &__title-link {
+        font-size: 0.87em;
+        line-height: 0.5em;
+        color: rgba($color: #f4f6f7, $alpha: 0.5);
+    }
+
+    &__item-link {
+        @extend .header__title-link;
+        color: $red-gray;
+        font-size: 1em;
+    }
+}
