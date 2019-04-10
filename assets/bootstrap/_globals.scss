@@ -1,0 +1,31 @@
+.learn-more {
+    
+    &,
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 1px;
+        background-color: black;
+    }
+    
+    & {
+        top: 5px;
+        left: 6px;
+    }
+
+    &::before {
+        width: 5px;
+        top: 1.55px;
+        left: 5.5px;
+        transform: rotate(135deg);
+    }
+
+    &::after {
+        width: 5px;
+        top: -1.55px;
+        left: 5.5px;
+        transform: rotate(45deg);
+    }
+}
