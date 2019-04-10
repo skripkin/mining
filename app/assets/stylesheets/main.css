@@ -64,6 +64,31 @@ body {
   line-height: 1;
   font-family: 'Raleway', Arial, Helvetica, sans-serif; }
 
+.learn-more, .learn-more::before, .learn-more::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background-color: black; }
+
+.learn-more {
+  top: 5px;
+  left: 6px; }
+
+.learn-more::before {
+  width: 5px;
+  top: 1.55px;
+  left: 5.5px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg); }
+
+.learn-more::after {
+  width: 5px;
+  top: -1.55px;
+  left: 5.5px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
 @font-face {
   font-family: "Raleway";
   src: url("./../fonts/Raleway/Raleway-Regular.eot?") format("eot"), url("./../fonts/Raleway/Raleway-Regular.woff2") format("woff2"), url("./../fonts/Raleway/Raleway-Regular.woff") format("woff"), url("./../fonts/Raleway/Raleway-Regular.ttf") format("truetype"), url('./../fonts/Raleway/Raleway-Regular.svg#str-replace(Raleway, " ", "_")') format("svg"); }
@@ -155,6 +180,7 @@ body {
 .header {
   position: fixed;
   display: flex;
+  top: 0;
   background-color: #ef4c2a;
   justify-content: space-between;
   padding: 17px 40px;
