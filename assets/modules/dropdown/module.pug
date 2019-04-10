@@ -1,0 +1,4 @@
+.dropdown(class="dropdown--" + dropdown.type)
+    select.dropdown__origional(name= dropdown.name)
+        each option in dropdown.options
+            option(value= option.type)= option.title
