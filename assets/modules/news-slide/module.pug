@@ -1,0 +1,19 @@
+.nslide
+    p.nslide__location= newSlide.local
+    p.nslide__headline= newSlide.par
+    p.nslide__datatime= newSlide.data
+    p.nslide__content= newSlide.text
+    a.nslide__link(href= newSlide.link)= newSlide.ltitle
+
+
+//- a.slide-hover(href="#")
+//-     -
+//-         var newSlide = {
+//-             local:'Мировые',
+//-             par:'Роль природных ресурсов в возникновении конфликтов',
+//-             data:'10.04.2017',
+//-             text:'Нехватка ресурсов стала одним из ключевых факторов, способствующих началу вооруженных конфликтов на территориях Ближнего ...',
+//-             link:'№',
+//-             ltitle:'Источник: cyberleninka.ru'
+//-         };
+//-     include ../modules/news-slide/module
