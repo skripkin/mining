@@ -1,0 +1,23 @@
+.pslide
+    img.pslide__picture(src="/app/assets/images/" + projectSlide.img, alt="Error" width="100%")
+    p.pslide__section= projectSlide.section
+    .pslide__data
+        ul.pslide__keys
+            li.pslide__key-item Вид:
+            li.pslide__key-item Тип:
+            li.pslide__key-item Регион:
+        ul.pslide__values
+            li.pslide__value-list= projectSlide.view
+            li.pslide__value-list= projectSlide.type
+            li.pslide__value-list= projectSlide.region
+
+
+//- -
+//-     var projectSlide = {
+//-         img:'project-slide1.png',
+//-         section:'Природные ресурсы Актауской области',
+//-         view:'Руда',
+//-         type:'Аренда',
+//-         region:'Западный Казахстан'
+//-     };
+//- include ../modules/project-slide/module
