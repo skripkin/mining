@@ -1,0 +1,28 @@
+.headline {
+    background-color: transparent;
+
+    &__section {
+        font-size: 2.5em;
+        line-height: 70px;
+        font-weight: 800;
+        color: $red-gray;
+    }
+
+    &__content {
+        font-size: 1em;
+        line-height: 22px;
+        color: $red-gray;
+        margin-bottom: 40px;
+    }
+
+    &__link {
+        position: relative;
+        color: rgba($color: #f4f6f7, $alpha: 0.5);
+
+        span {
+            top: 10px;
+            left: 155px;
+            background-color: rgba($color: #f4f6f7, $alpha: 0.5);
+        }
+    }
+}
