@@ -69,7 +69,7 @@ body {
   position: absolute;
   width: 10px;
   height: 1px;
-  background-color: black; }
+  background-color: inherit; }
 
 .learn-more {
   top: 5px;
@@ -279,6 +279,26 @@ body {
       cursor: pointer; }
       .dropdown__fake-option--active {
         display: none; }
+
+.headline {
+  background-color: transparent; }
+  .headline__section {
+    font-size: 2.5em;
+    line-height: 70px;
+    font-weight: 800;
+    color: #f7f7f7; }
+  .headline__content {
+    font-size: 1em;
+    line-height: 22px;
+    color: #f7f7f7;
+    margin-bottom: 40px; }
+  .headline__link {
+    position: relative;
+    color: rgba(244, 246, 247, 0.5); }
+    .headline__link span {
+      top: 10px;
+      left: 155px;
+      background-color: rgba(244, 246, 247, 0.5); }
 
 .tns-outer {
   padding: 0 !important; }
