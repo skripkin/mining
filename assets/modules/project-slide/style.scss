@@ -1,0 +1,28 @@
+.pslide {
+    width: 250px;
+    margin-bottom: 25px;
+    
+    &__section {
+        font-size: 1.2em;
+        line-height: 22px;
+        font-weight: 600;
+        color: $black;
+        margin: 10px 0;
+    }
+
+    &__data {
+        display: flex;
+    }
+
+    &__key-item {
+        font-size: 0.75em;
+        line-height: 16px;
+        color: $gray;
+    }
+    
+    &__value-list {
+        @extend .pslide__key-item;
+        color: $dark-gray;
+        margin-left: 15px;
+    }
+}
