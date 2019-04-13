@@ -524,6 +524,10 @@ body {
     .project-slider .headline__link span {
       background-color: #f19104; }
 
+.video iframe {
+  width: 500px;
+  height: 250px; }
+
 .tns-outer {
   padding: 0 !important; }
 
