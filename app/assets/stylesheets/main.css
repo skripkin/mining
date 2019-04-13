@@ -525,8 +525,32 @@ body {
       background-color: #f19104; }
 
 .video iframe {
-  width: 500px;
-  height: 250px; }
+  width: 400px;
+  height: 225px; }
+
+.usevideo {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: 150px auto;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #3c3c3c;
+  z-index: 10; }
+  .usevideo__information {
+    padding-top: 25px;
+    padding-left: 20px; }
+  .usevideo__content {
+    margin-left: 27%; }
+  .usevideo .headline__section {
+    line-height: 40px;
+    margin-bottom: 15px; }
+  .usevideo .headline__content {
+    color: #9d9d9d; }
+  .usevideo .headline__link {
+    color: #f19104; }
+    .usevideo .headline__link span {
+      background-color: #f19104; }
 
 .tns-outer {
   padding: 0 !important; }
