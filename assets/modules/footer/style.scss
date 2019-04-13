@@ -1,0 +1,23 @@
+.footer {
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        padding: 25px 150px;
+        border-top: 1px solid $gray;
+    }
+
+    &__link {
+        font-size: 0.85em;
+        line-height: 22px;
+        color: $gray;
+    }
+
+    &__security {
+        font-size: 0.8em;
+        border-top: 1px solid $gray;
+        padding: 25px;
+        text-align: center;
+        color: $gray;
+    }
+}
