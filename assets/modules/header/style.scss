@@ -1,11 +1,11 @@
 .header {
-    position: fixed;
     display: flex;
-    top: 0;
-    background-color: $dark-orange;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
     padding: 17px 40px;
     z-index: 15;
+    background-color: $dark-orange;
 
     &__icon {
         width: 17.3%;
