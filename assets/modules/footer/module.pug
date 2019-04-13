@@ -1,0 +1,21 @@
+-
+    var footerItems = {
+        items: [
+            {word:'О проекте', link:'#'},
+            {word:'Финансы', link:'#'},
+            {word:'Новости', link:'#'},
+            {word:'Видео', link:'#'},
+            {word:'Case Study', link:'#'},
+            {word:'История успеха', link:'#'},
+            {word:'Проекты', link:'#'},
+            {word:'Инвесторам', link:'#'},
+            {word:'Сервисные компании', link:'#'},
+            {word:'Контакты', link:'#'},
+        ]
+    };
+.footer
+    ul.footer__list
+        each item in footerItems.items
+            li.footer__item
+                a.footer__link(href= item.link)= item.word
+    p.footer__security &#169;2017 Все права защищены
