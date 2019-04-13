@@ -1,0 +1,21 @@
+.article
+    .article__left
+        if article.isImg
+            .article__picture-container
+                img.article__picture(src="/app/assets/images/" + article.img, alt="Error")
+        p.article__item= article.item
+        p.article__region= article.region
+    .article__right 
+        p.article__headl= article.title
+        p.article__content= article.text
+
+    //- -
+    //-     var article = {
+    //-         isImg: true,
+    //-         item:'Kaz Minerals',
+    //-         region:'Казахстан, Алматы',
+    //-         title:'Роль природных ресурсов в возникновении конфликтов',
+    //-         text:'Нехватка ресурсов стала одним из ключевых факторов, способствующих началу вооруженных конфликтов на территориях Ближнего Востока, Северной Африки и других',
+    //-         img:'bahtiar-arnoldovich.png'
+    //-     };
+    //- include ../modules/article/module
