@@ -2,9 +2,18 @@
     display: flex;
     justify-content: space-between;
 
+    &__left {
+        width: 75%;
+        text-align: center;
+    }
+
+    &__picture-container {
+        margin: 0 auto;
+    }
+
     &__item {
         font-size: 14px;
-        line-height: 12px;
+        line-height: 18px;
         color: $black;
     }
 
@@ -18,11 +27,14 @@
         line-height: 22px;
         color: $dark-gray;
         font-weight: 600;
+        margin-bottom: 15px;
     }
 
     &__content {
         @extend .article__headl;
         font-weight: 500;
+        width: 100%;
+        margin-bottom: 0;
     }
 
     &__picture-container {

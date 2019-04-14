@@ -1,0 +1,84 @@
+.articontainer
+    .articontainer__post
+        p.articontainer__caption= articleContainer.hat
+        p.articontainer__banner= articleContainer.topic
+    if articleContainer.right
+        .articontainer__content
+            -
+                var article = {
+                    isImg: false,
+                    item:'Kaz Minerals',
+                    region:'Казахстан, Алматы',
+                    title:'Роль природных ресурсов в возникновении конфликтов',
+                    text:'Нехватка ресурсов стала одним из ключевых факторов,\
+                     способствующих началу вооруженных конфликтов на территориях Ближнего Востока,\
+                      Северной Африки и других',
+                    img:'bahtiar-arnoldovich.png'
+                };
+            include ../article/module
+            -
+                var article = {
+                    isImg: false,
+                    item:'Kaz Minerals',
+                    region:'Казахстан, Алматы',
+                    title:'Роль природных ресурсов в возникновении конфликтов',
+                    text:'Нехватка ресурсов стала одним из ключевых факторов,\
+                     способствующих началу вооруженных конфликтов на территориях Ближнего Востока,\
+                      Северной Африки и других',
+                    img:'bahtiar-arnoldovich.png'
+                };
+            include ../article/module
+            -
+                var article = {
+                    isImg: false,
+                    item:'Kaz Minerals',
+                    region:'Казахстан, Алматы',
+                    title:'Роль природных ресурсов в возникновении конфликтов',
+                    text:'Нехватка ресурсов стала одним из ключевых факторов,\
+                     способствующих началу вооруженных конфликтов на территориях Ближнего Востока,\
+                      Северной Африки и других',
+                    img:'bahtiar-arnoldovich.png'
+                };
+            include ../article/module
+        a.articontainer__link(href= articleContainer.link) Посмотреть больше
+            span.learn-more
+    else 
+        .articontainer__content-right
+            -
+                var article = {
+                    isImg: true,
+                    item:'Бахтияр Орнлольдовичь',
+                    region:'10.04.2017',
+                    title:'Роль природных ресурсов в возникновении конфликтов',
+                    text:'Нехватка ресурсов стала одним из ключевых факторов,\
+                     способствующих началу вооруженных конфликтов на территориях Ближнего Востока,\
+                      Северной Африки и других',
+                    img:'bahtiar-arnoldovich.png'
+                };
+            include ../article/module
+            -
+                var article = {
+                    isImg: true,
+                    item:'Бахтияр Орнлольдовичь',
+                    region:'10.04.2017',
+                    title:'Роль природных ресурсов в возникновении конфликтов',
+                    text:'Нехватка ресурсов стала одним из ключевых факторов,\
+                     способствующих началу вооруженных конфликтов на территориях Ближнего Востока,\
+                      Северной Африки и других',
+                    img:'bahtiar-arnoldovich.png'
+                };
+            include ../article/module
+            -
+                var article = {
+                    isImg: true,
+                    item:'Бахтияр Орнлольдовичь',
+                    region:'10.04.2017',
+                    title:'Роль природных ресурсов в возникновении конфликтов',
+                    text:'Нехватка ресурсов стала одним из ключевых факторов,\
+                     способствующих началу вооруженных конфликтов на территориях Ближнего Востока,\
+                      Северной Африки и других',
+                    img:'bahtiar-arnoldovich.png'
+                };
+            include ../article/module
+        a.articontainer__link(href= articleContainer.link) Посмотреть больше
+            span.learn-more

@@ -9,4 +9,21 @@ block content
     include ../modules/news-slider/module
     include ../modules/project-slider/module
     include ../modules/usefull-video/module
+    .article-items
+        .article-items__left
+            -
+                var articleContainer = {
+                    right: true,
+                    hat:'История успеха',
+                    topic:'Реальные примеры из истории бмзнеса успехов молодых компаний'
+                };
+            include ../modules/article-container/module
+        .article-items__right
+            -
+                var articleContainer = {
+                    right: false,
+                    hat:'Научные статьи',
+                    topic:'Отчеты о проведенных исследований ведущих специалистов нашей отрасли'
+                };
+            include ../modules/article-container/module
     include ../modules/footer/module

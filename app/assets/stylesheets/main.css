@@ -536,6 +536,7 @@ body {
   padding: 25px;
   border-radius: 10px;
   background-color: #3c3c3c;
+  box-shadow: 0 15px 25px rgba(31, 29, 29, 0.37);
   z-index: 10; }
   .usevideo__information {
     padding-top: 25px;
@@ -555,9 +556,14 @@ body {
 .article {
   display: flex;
   justify-content: space-between; }
+  .article__left {
+    width: 75%;
+    text-align: center; }
+  .article__picture-container {
+    margin: 0 auto; }
   .article__item, .article__region {
     font-size: 14px;
-    line-height: 12px;
+    line-height: 18px;
     color: #3c3c3c; }
   .article__region {
     color: #9d9d9d; }
@@ -565,9 +571,12 @@ body {
     font-size: 18px;
     line-height: 22px;
     color: #282828;
-    font-weight: 600; }
+    font-weight: 600;
+    margin-bottom: 15px; }
   .article__content {
-    font-weight: 500; }
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 0; }
   .article__picture-container {
     border-radius: 50%;
     width: 50px;
@@ -578,6 +587,51 @@ body {
     position: relative;
     left: -15px;
     top: 5px; }
+
+.articontainer {
+  padding-top: 200px;
+  padding-bottom: 100px;
+  text-align: left;
+  background-color: inherit; }
+  .articontainer__post {
+    width: 60%;
+    margin-bottom: 35px;
+    margin-left: 30px; }
+  .articontainer__caption {
+    font-size: 2.5em;
+    line-height: 1em;
+    font-weight: 900;
+    color: #3c3c3c; }
+  .articontainer__banner {
+    font-size: 1em;
+    line-height: 20px;
+    color: #9d9d9d;
+    margin: 15px 0; }
+  .articontainer__content .article {
+    margin-bottom: 35px; }
+    .articontainer__content .article__left {
+      text-align: left;
+      margin-left: 30px; }
+    .articontainer__content .article__right {
+      margin-right: 75px;
+      width: 120%; }
+  .articontainer__content-right .article {
+    margin-bottom: 35px; }
+    .articontainer__content-right .article__left {
+      text-align: center; }
+    .articontainer__content-right .article__right {
+      margin-right: 100px;
+      width: 120%; }
+  .articontainer__link {
+    display: block;
+    right: -70%;
+    top: 25px;
+    position: relative;
+    color: #f19104; }
+    .articontainer__link span {
+      top: 7.5px;
+      left: 155px;
+      background-color: #f19104; }
 
 .footer__list {
   display: flex;
@@ -596,6 +650,17 @@ body {
   padding: 25px;
   text-align: center;
   color: #9d9d9d; }
+
+.article-items {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -265px; }
+  .article-items__left {
+    background-color: #f7f7f7;
+    z-index: -1; }
+  .article-items__right {
+    padding-left: 50px; }
 
 .tns-outer {
   padding: 0 !important; }
