@@ -1,0 +1,56 @@
+.feedback {
+    width: 60%;
+    background-color: $blue-gray;
+    margin: 0 auto;
+    text-align: center;
+
+    &__title {
+        font-size: 3em;
+        font-weight: 900;
+        line-height: 50px;
+        color: $black;
+        text-align: center;
+    }
+
+    &__info {
+        width: 65%;
+        font-size: 1em;
+        line-height: 28px;
+        color: $gray;
+        text-align: center;
+        margin: 15px auto;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 35px;
+    }
+
+    input {
+        width: 100%;
+        height: 25px;
+        padding: 10px 15px;
+        margin-left: 35px;
+        border-radius: 7px;
+        outline:0;
+        border: inherit;
+            
+        &::placeholder {
+            font-family: Raleway;
+            font-weight: normal;
+            font-size: 100%;
+            color: $gray;
+        }
+    }
+
+    &__button {
+        align-self: center;
+        margin-left: 35px;
+        padding: 10px 40px;
+        background-color: $orange;
+        color: white;
+        border-radius: 7px;
+        font-size: medium;
+    }
+}
