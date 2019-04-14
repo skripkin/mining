@@ -1,0 +1,16 @@
+.article-items {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -265px;
+
+
+    &__left {
+        background-color: $red-gray;
+        z-index: -1;
+    }
+
+    &__right {
+        padding-left: 50px;
+    }
+}

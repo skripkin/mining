@@ -1,0 +1,74 @@
+.articontainer {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    text-align: left;
+    background-color: inherit;
+
+    &__post {
+        width: 60%;
+        margin-bottom: 35px;
+        margin-left: 30px;
+    }
+
+    &__caption {
+        font-size: 2.5em;
+        line-height: 1em;
+        font-weight: 900;
+        color: $black;
+    }
+
+    &__banner {
+        font-size: 1em;
+        line-height: 20px;
+        color: $gray;
+        margin: 15px 0;
+    }
+
+    &__content {
+
+        .article {
+            margin-bottom: 35px;
+        
+            &__left {
+                text-align: left;
+                margin-left: 30px;
+            }
+
+            &__right {
+                margin-right: 75px;
+                width: 120%;
+            }
+        }
+    }
+
+    &__content-right {
+
+        .article {
+            margin-bottom: 35px;
+
+
+            &__left {
+                text-align: center;
+            }
+
+            &__right {
+                margin-right: 100px;
+                width: 120%;
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        right: -70%;
+        top: 25px;
+        position: relative;
+        color: $orange;
+
+        span {
+            top: 7.5px;
+            left: 155px;
+            background-color: $orange;
+        }
+    }
+}
