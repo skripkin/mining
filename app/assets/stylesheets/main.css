@@ -203,7 +203,12 @@ body {
   top: 0;
   padding: 17px 40px;
   z-index: 15;
-  background-color: #ef4c2a; }
+  background-color: #ef4c2a;
+  max-width: 1366px;
+  width: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
   .header__icon {
     width: 17.3%; }
   .header__menubar {
@@ -633,6 +638,60 @@ body {
       left: 155px;
       background-color: #f19104; }
 
+.feedback {
+  width: 60%;
+  background-color: #f4f6f7;
+  margin: 0 auto;
+  text-align: center; }
+  .feedback__title {
+    font-size: 3em;
+    font-weight: 900;
+    line-height: 50px;
+    color: #3c3c3c;
+    text-align: center; }
+  .feedback__info {
+    width: 65%;
+    font-size: 1em;
+    line-height: 28px;
+    color: #9d9d9d;
+    text-align: center;
+    margin: 15px auto; }
+  .feedback__form {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px; }
+  .feedback input {
+    width: 100%;
+    height: 25px;
+    padding: 10px 15px;
+    margin-left: 35px;
+    border-radius: 7px;
+    outline: 0;
+    border: inherit; }
+    .feedback input::-webkit-input-placeholder {
+      font-family: Raleway;
+      font-weight: normal;
+      font-size: 100%;
+      color: #9d9d9d; }
+    .feedback input::-ms-input-placeholder {
+      font-family: Raleway;
+      font-weight: normal;
+      font-size: 100%;
+      color: #9d9d9d; }
+    .feedback input::placeholder {
+      font-family: Raleway;
+      font-weight: normal;
+      font-size: 100%;
+      color: #9d9d9d; }
+  .feedback__button {
+    align-self: center;
+    margin-left: 35px;
+    padding: 10px 40px;
+    background-color: #f19104;
+    color: white;
+    border-radius: 7px;
+    font-size: medium; }
+
 .footer__list {
   display: flex;
   justify-content: space-around;
@@ -651,16 +710,28 @@ body {
   text-align: center;
   color: #9d9d9d; }
 
+.container {
+  max-width: 1446px;
+  width: 100%;
+  margin: 0 auto; }
+
 .article-items {
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: -265px; }
+  top: -265px;
+  box-shadow: 0 7.5px 25px rgba(31, 29, 29, 0.37);
+  overflow: hidden; }
   .article-items__left {
     background-color: #f7f7f7;
     z-index: -1; }
   .article-items__right {
     padding-left: 50px; }
+
+.feedback-form {
+  margin-top: -19.5%;
+  background-color: #f4f6f7;
+  padding: 75px 0; }
 
 .tns-outer {
   padding: 0 !important; }
