@@ -23,6 +23,15 @@ class ProSlider {
             items: 3,
             mouseDrag: true,
             freezable: false,
+            responsive: {
+                1200: {
+                    controlsText: [
+                        '<span class="project-slider__gallery-arrow arrow project-slider__gallery-arrow--prev"></span>',
+                        '<span class="project-slider__gallery-arrow arrow project-slider__gallery-arrow--next"></span>',
+                    ],
+                    items: 3
+                },
+            }
         });
     }
 
