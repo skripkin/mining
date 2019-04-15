@@ -24,12 +24,40 @@ class ProSlider {
             mouseDrag: true,
             freezable: false,
             responsive: {
-                1200: {
+                860: {
                     controlsText: [
                         '<span class="project-slider__gallery-arrow arrow project-slider__gallery-arrow--prev"></span>',
                         '<span class="project-slider__gallery-arrow arrow project-slider__gallery-arrow--next"></span>',
                     ],
                     items: 3
+                },
+                685: {
+                    controlsText: [
+                        '<span class="project-slider__gallery-arrow arrow project-slider__gallery-arrow--prev"></span>',
+                        '<span class="project-slider__gallery-arrow arrow project-slider__gallery-arrow--next"></span>',
+                    ],
+                    items: 2
+                },
+                560: {
+                    controlsText: [
+                        '<span class="project-slider__gallery-arrow arrow project-slider__gallery-arrow--prev"></span>',
+                        '<span class="project-slider__gallery-arrow arrow project-slider__gallery-arrow--next"></span>',
+                    ],
+                    items: 2.5
+                },
+                460: {
+                    controlsText: [
+                        '<span class="project-slider__gallery-arrow arrow project-slider__gallery-arrow--prev"></span>',
+                        '<span class="project-slider__gallery-arrow arrow project-slider__gallery-arrow--next"></span>',
+                    ],
+                    items: 2
+                },
+                400: {
+                    controlsText: [
+                        '<span class="project-slider__gallery-arrow arrow project-slider__gallery-arrow--prev"></span>',
+                        '<span class="project-slider__gallery-arrow arrow project-slider__gallery-arrow--next"></span>',
+                    ],
+                    items: 1
                 },
             }
         });
