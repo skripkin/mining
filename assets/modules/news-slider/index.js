@@ -38,12 +38,19 @@ class NewSlider {
                     ],
                     items: 2.8
                 },
-                985: {
+                600: {
                     controlsText: [
                         '<span class="news-slider__gallery-arrow arrow news-slider__gallery-arrow--prev"></span>',
                         '<span class="news-slider__gallery-arrow arrow news-slider__gallery-arrow--next"></span>',
                     ],
-                    items: 2.4
+                    items: 3
+                },
+                400: {
+                    controlsText: [
+                        '<span class="news-slider__gallery-arrow arrow news-slider__gallery-arrow--prev"></span>',
+                        '<span class="news-slider__gallery-arrow arrow news-slider__gallery-arrow--next"></span>',
+                    ],
+                    items: 1
                 }
             }
         });
