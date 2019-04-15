@@ -48,7 +48,9 @@
     }
 
     &__sailing {
-        @extend .header__info;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
     }
 
     &__title,
@@ -111,6 +113,7 @@
             transition: 0.3s;
 
             &--opened {
+                display: block;
                 z-index: 100;
                 opacity: 1;
             }
@@ -183,8 +186,16 @@
 
 @media (max-width: $mobileXs) {
     .header {
+        justify-content: start;
+        padding: 10px 0;
+        left: 49%;
+
         &__icon {
             width: 33%;
+        }
+
+        &__item {
+            margin-left: 0;
         }
     }
 }

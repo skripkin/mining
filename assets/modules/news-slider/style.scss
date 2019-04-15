@@ -229,10 +229,10 @@
     .news-slider {
         &__gallery-arrow {
             &--prev {
-                left: -220px;
+                left: -350px;
             }
             &--next {
-                left: 180px;
+                left: 280px;
             }
         }
     }
@@ -286,14 +286,14 @@
         }
 
         .tns-controls {
-            left: 30%;
+            left: 50%;
         }
 
         .tns-nav {
-            left: 5%;
+            left: 25%;
         }
 
-        .tns-outer {
+        #tns1-mw {
             margin-left: 20%;
         }
     }
