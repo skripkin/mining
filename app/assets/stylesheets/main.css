@@ -108,6 +108,25 @@ body {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg); }
 
+.burger-menu {
+  display: inline-block;
+  position: relative;
+  top: -4px; }
+  .burger-menu, .burger-menu::before, .burger-menu::after {
+    width: 25px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: rgba(244, 246, 247, 0.5); }
+  .burger-menu::before, .burger-menu::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0; }
+  .burger-menu::before {
+    top: -7px; }
+  .burger-menu::after {
+    top: 7.5px; }
+
 @font-face {
   font-family: "Raleway";
   src: url("./../fonts/Raleway/Raleway-Regular.eot?") format("eot"), url("./../fonts/Raleway/Raleway-Regular.woff2") format("woff2"), url("./../fonts/Raleway/Raleway-Regular.woff") format("woff"), url("./../fonts/Raleway/Raleway-Regular.ttf") format("truetype"), url('./../fonts/Raleway/Raleway-Regular.svg#str-replace(Raleway, " ", "_")') format("svg"); }
@@ -210,11 +229,13 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
   .header__icon {
+    margin-left: 25px;
     width: 17.3%; }
   .header__menubar {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-right: 25px; }
   .header__about-us {
     display: flex;
     justify-content: flex-end;
@@ -242,6 +263,69 @@ body {
   .header__item-link {
     color: #f7f7f7;
     font-size: 1em; }
+  .header__burger-main {
+    display: none;
+    margin: 0 15px; }
+
+@media (max-width: 985px) {
+  .header__title-link, .header__item-link {
+    font-size: 0.75em; }
+  .header__menu {
+    width: 102%;
+    margin-top: 10px; }
+  .header__sailing {
+    justify-content: start; } }
+
+@media (max-width: 860px) {
+  .header {
+    height: 36px; }
+    .header__menu {
+      position: absolute;
+      right: 140px;
+      top: 60px;
+      width: 17.5%;
+      z-index: -15;
+      opacity: 0;
+      background-color: #ef4c2a;
+      transition: 0.3s; }
+      .header__menu--opened {
+        z-index: 100;
+        opacity: 1; }
+    .header__item {
+      margin-bottom: 10px;
+      padding: 5px; }
+    .header__icon {
+      width: 15%; }
+    .header__burger-main {
+      display: block; } }
+
+@media (max-width: 768px) {
+  .header__icon {
+    width: 20%; } }
+
+@media (max-width: 600px) {
+  .header__menubar {
+    margin-right: 15px; }
+  .header__icon {
+    margin-left: 15px; }
+  .header__title {
+    margin-left: 20px; }
+  .header__burger-main {
+    margin: 0 5px; }
+  .header__dropdown-box {
+    margin-left: 0; } }
+
+@media (max-width: 560px) {
+  .header__icon {
+    width: 23%; }
+  .header__info, .header__sailing {
+    display: none; }
+  .header__burger-main {
+    margin: 0 15px; } }
+
+@media (max-width: 400px) {
+  .header__icon {
+    width: 33%; } }
 
 .dropdown {
   font-family: Raleway; }
@@ -414,7 +498,7 @@ body {
               transform: rotate(180deg);
       left: 20px; }
     .news-slider__gallery-arrow--next {
-      left: 135px; }
+      left: 145px; }
   .news-slider .tns-nav {
     display: block;
     position: absolute;
@@ -729,7 +813,7 @@ body {
     padding-left: 50px; }
 
 .feedback-form {
-  margin-top: -19.5%;
+  margin-top: -18.5%;
   background-color: #f4f6f7;
   padding: 75px 0; }
 

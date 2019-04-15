@@ -53,3 +53,32 @@
         transform: rotate(135deg);
     }
 }
+
+.burger-menu {
+    display: inline-block;
+    position: relative;
+    top: -4px;
+
+    &,
+    &::before,
+    &::after {
+        width: 25px;
+        height: 3px;
+        border-radius: 2px;
+        background-color: rgba($color: #f4f6f7, $alpha: 0.5);
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    &::before {
+        top: -7px;
+    }
+    &::after {
+        top: 7.5px;
+    }
+}
