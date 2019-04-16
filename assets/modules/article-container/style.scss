@@ -72,3 +72,54 @@
         }
     }
 }
+
+@media (max-width: $laptop) {
+    .articontainer {
+        padding-top: 0;
+        padding-bottom: 50px;
+
+        .article__right {
+            margin-right: 0;
+        }
+
+        .article__content {
+            width: 99%;
+        }
+
+        &__link {
+            right: -65%;
+        }
+    }
+}
+
+@media (max-width: $mobileL) {
+    .articontainer {
+        &__link {
+            right: -55%;
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .articontainer {
+
+        &__post {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .article {
+            display: block;
+
+            &__left {
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            &__right {
+                width: 100%;
+                text-align: center
+            }
+        }
+    }
+}
