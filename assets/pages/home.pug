@@ -27,11 +27,11 @@ block content
                         topic:'Отчеты о проведенных исследований ведущих специалистов нашей отрасли'
                     };
                 include ../modules/article-container/module
-        //- .feedback-form
-        //-     -
-        //-         var feedBack = {
-        //-             hat:'Будьте в курсе последних новостей',
-        //-             mass:'Будьте в курсе самых последних событий и новостей в горнодобывающей сфере'
-        //-         };
-        //-     include ../modules/feedback/module
+        .feedback-form
+            -
+                var feedBack = {
+                    hat:'Будьте в курсе последних новостей',
+                    mass:'Будьте в курсе самых последних событий и новостей в горнодобывающей сфере'
+                };
+            include ../modules/feedback/module
         //- include ../modules/footer/module
