@@ -21,3 +21,48 @@
         color: $gray;
     }
 }
+
+@media (max-width: $laptopLg) {
+    .footer {
+        &__list {
+            padding: 20px 50px;
+        }
+    }
+}
+
+@media (max-width: $laptop) {
+    .footer {
+        &__list {
+            padding: 20px 5px;
+        }
+    }
+}
+
+@media (max-width: $laptopXs) {
+    .footer {
+        &__security {
+            padding: 10px;
+        }
+    }
+}
+
+@media (max-width: $tablet) {
+    .footer {
+        &__list {
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            margin: 0 5px;
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .footer {
+        &__item {
+            margin: 0;
+            margin-left: 25px;
+        }
+    }
+}
