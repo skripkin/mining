@@ -27,3 +27,39 @@
     background-color: $blue-gray;
     padding: 75px 0;
 }
+
+@media (max-width: $laptop) {
+
+    .article-items {
+        display: block;
+        top: -100px;
+
+        &__right {
+            padding-left: 0;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .article-items {
+        padding-top: 4%;
+    }
+}
+
+@media (max-width: $mobileLg) {
+    .article-items {
+        padding-top: 10%;
+    }
+}
+
+@media (max-width: $mobile) {
+    .article-items {
+        padding-top: 15%;
+    }
+}
+
+@media (max-width: $mobileXs) {
+    .article-items {
+        padding-top: 30%;
+    }
+}
